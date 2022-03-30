@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a class="active" href="brute.html">Bruteforce</a>
+        <a href="https://www.paypal.com/paypalme/donateh461">Donate</a>
+        <a href="https://blogmypass.blogspot.com/">Blog</a>
+        <a href="random.html">Random password genarator</a>
+        <a href="safe.html">Check is my password safe!</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+<p class="w3-large">
+<div class="wrap wrap--default  ">
+		
+
+
+
+
+    
+    
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        What is bruteforce attack?
+    
+
+</h2>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>Brute-force attacks work by calculating every possible combination that could make up a password and testing it to see if it is the correct password. As the password's length increases, the amount of time, on average, to find the correct password increases exponentially.</p>
+</div>
+
+    <div class="C15-Title">
+<h2 class=" u-headline-topBottom   ">
+
+    
+    
+        Types of Brute Force Attacks
+    
+
+</h2>
+
+</div>
+
+    <div class="C32-Text text parbase">
+  <p>There are various types of&nbsp;<a href="https://en.wikipedia.org/wiki/Brute-force_attack" target="_blank">brute force attack</a>&nbsp;methods that allow attackers to gain unauthorized access and steal user data.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Simple Brute Force Attacks
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>A simple brute force attack occurs when a hacker attempts to guess a user’s login credentials manually without using any software. This is typically through standard password combinations or personal identification number (PIN) codes.&nbsp;</p>
+<p>These attacks are simple because many people still use weak passwords, such as "password123" or "1234," etc or practice poor password etiquette, such as using the same password for multiple websites. Passwords can also be guessed by hackers that do minimal reconnaissance work to crack an individual's potential password, such as the name of their favorite sports team.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Dictionary Attacks
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>A dictionary attack is a basic form of brute force hacking in which the attacker selects a target, then tests possible passwords against that individual’s username. The attack method itself is not technically considered a brute force attack, but it can play an important role in a bad actor’s password-cracking process.&nbsp;</p>
+<p>The name "dictionary attack" comes from hackers running through dictionaries and amending words with special characters and numbers. This type of attack is typically time-consuming and has a low chance of success compared to newer, more effective attack methods.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Hybrid Brute Force Attacks
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>A hybrid brute force attack is when a hacker combines a dictionary attack method with a simple brute force attack. It begins with the hacker knowing a username, then carrying out a dictionary attack and simple brute force methods to discover an account login combination.&nbsp;</p>
+<p>The attacker starts with a list of potential words, then experiments with character, letter, and number combinations to find the correct password. This approach allows hackers to discover passwords that combine common or popular words with numbers, years, or random characters, such as "SanDiego123" or "Rover2020."</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Reverse Brute Force Attacks
+    
+
+</h3>
+
+</div>
+
+    <div class="C32-Text text parbase">
+  <p>A reverse brute force attack sees an attacker begin the process with a known password, which is typically discovered through a network breach. They use that password to search for a matching login credential using lists of millions of usernames. Attackers may also use a commonly used weak password, such as "Password123," to search through a database of usernames for a match.</p>
+
+
+</div>
+
+
+    
+    
+    <div class="C15-Title">
+<h3 class=" u-headline-topBottom   ">
+
+    
+    
+        Credential Stuffing
+    
+
+</h3>
+
+</div>
+
+
+    
+    
+    <div class="C32-Text text parbase">
+  <p>Credential stuffing preys on users’ weak password etiquettes. Attackers collect username and password combinations they have stolen, which they then test on other websites to see if they can gain access to additional user accounts. This approach is successful if people use the same username and password combination or reuse passwords for various accounts and social media profiles.</p>
+
+
+
+</div>
+</div>
+</p>
+<h3 class="ftwp-heading" id="1-account-lockouts-after-failed-attempts" style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; word-break: break-word;">How to prevent my account from brute force</h3><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;">1. Account Lockouts After Failed Attempts</p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;"><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">As stated above, implementing an account lockout after several unsuccessful login attempts is ineffective as it makes your server easy prey for denial-of-service attacks. However, if performed with progressive delays, this method becomes much more effective.</span></p><p style="box-sizing: inherit; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;"><span style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; font-weight: bolder;">Account lockouts with&nbsp;progressive delays</span><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">&nbsp;lock an account only for a set amount of time after a designated number of unsuccessful login attempts. This means that automated brute force attack tools will not be as useful. Additionally, admins will not have to deal with unlocking several hundred accounts every 10 minutes or so.</span><span style="color: #404040; font-family: roboto, sans-serif;"><br /></span><span style="font-family: poppins, sans-serif;"><span style="font-size: 24px;">2. Make the Root User Inaccessible via SSH</span></span></p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;"><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">SSH brute force attempts are often carried out on the root user of a server. Make sure to&nbsp;</span><span style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; font-weight: bolder;">make the root user inaccessible via SSH</span><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">&nbsp;by editing the sshd_config file. Set the&nbsp;</span><em style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px;">‘DenyUsers root’&nbsp;</em><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">and&nbsp;</span><em style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px;">‘PermitRootLogin no’</em><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">&nbsp;options.</span></p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;">3. Modify the Default Port</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">Most automated SSH attacks are attempted on the default port 22. So, running sshd on a different port could prove to be a useful way of dealing with brute force attacks.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">To&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">switch to a non-standard port</span>, edit the port line in your&nbsp;<em style="box-sizing: inherit;">sshd_config&nbsp;</em>file.</p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;">4. Use CAPTCHA</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">We all got used to seeing CAPTCHA on the internet. Nobody likes trying to make sense of something that looks like it’s been scribbled by a two-year-old, but tools such as CAPTCHA render automated bots ineffective.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">That single requirement to enter a word, or the number of cats on a generated image, is&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">highly effective against bots</span>, even though hackers have started using optical character recognition tools to get past this safety mechanism.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">Bear in mind that the use of tools such as CAPTCHA negatively impacts the user experience.</p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;">5. Limit Logins to a Specified IP Address or Range</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">If you allow access only from a designated IP address or range, brute-force attackers will need to work hard to overcome that obstacle and forcefully gain access.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">It is like placing a security perimeter around your most precious data, and everyone who doesn’t originate from the right IP address is not allowed access.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">You can set this up by scoping a remote access port to a static IP address. If you don’t have a static IP address, you can configure a VPN instead. One downside is that this might not be appropriate for every use case.</p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;">6. Employ 2-Factor Authentication (2FA)</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;"><span style="box-sizing: inherit; font-weight: bolder;">Two-factor authentication</span>&nbsp;is considered by many to be the first line of defense against brute force attacks. Implementing such a solution greatly reduces the risk of&nbsp;<a href="https://phoenixnap.com/blog/what-is-a-data-breach" rel="noreferrer noopener" style="box-sizing: inherit; color: #0074db; text-decoration-line: none; word-break: break-word;" target="_blank">a potential data breach</a>.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">The great thing about 2FA is that password alone is not enough. Even if an attacker cracks the password, they would have to have access to your smartphone or email client. Very persistent attackers might try to overcome that obstacle, but most will turn around and search for an easier target.</p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;">7. Use Unique Login URLs</p><p style="box-sizing: inherit; font-family: poppins, sans-serif; font-size: 24px; margin: 0px; overflow-wrap: break-word; text-align: left; word-break: break-word;"><span style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; font-weight: bolder;">Create unique login URLs for different user groups</span><span style="color: #404040; font-family: roboto, sans-serif; font-size: 16px;">. This will not stop a brute force attack, but introducing that additional variable makes things a bit more challenging and time-consuming for an attacker.</span><br />8. Monitor Your Server Logs</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">Be sure to&nbsp;<span style="box-sizing: inherit; font-weight: bolder;">analyze your log files diligently</span>. Admins know that log files are essential for maintaining a system.</p><p style="box-sizing: inherit; color: #404040; font-family: roboto, sans-serif; font-size: 16px; margin-block: 0px 1em; overflow-wrap: break-word; word-break: break-word;">Log management applications, such as&nbsp;<em style="box-sizing: inherit;">Logwatch</em>, can help you perform daily check-ups and can auto-generate daily reports.</p>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div style="padding-left:16px">
+  
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

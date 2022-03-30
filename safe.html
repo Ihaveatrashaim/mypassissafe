@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Home</a>
+        <a href="brute.html">Bruteforce</a>
+        <a href="https://www.paypal.com/paypalme/donateh461">Donate</a>
+        <a href="https://blogmypass.blogspot.com/">Blog</a>
+        <a href="random.html">Random password genarator</a>
+        <a class="active" href="safe.html">Check is my password safe!</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+<p class="w3-large">
+<head>
+    <!-- Bootstrap 5 link -->
+    <!-- CSS Styling -->
+    <style>
+        .passwordInput{
+            margin-top: 5%; 
+            text-align :center;
+        }
+
+        input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .displayBadge{
+            margin-top: 5%; 
+            display: none; 
+            text-align :center;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex text-danger justify-content-center">
+        <h4 style="margin-top: 10%; text-align :center">
+            Password Strength Checker
+        </h4><br>
+        <br><input type="passwordInput" placeholder="Type your password" id="PassEntry" class="form-control passwordInput">
+        <br><span id="StrengthDisp" class="badge displayBadge">Weak</span>
+    </div>     
+</body>
+
+<div style="padding-left:16px">
+  
+</div>
+</p>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+    
+    // timeout before a callback is called
+
+    let timeout;
+
+    // traversing the DOM and getting the input and span using their IDs
+
+    let password = document.getElementById('PassEntry')
+    let strengthBadge = document.getElementById('StrengthDisp')
+
+    // The strong and weak password Regex pattern checker
+
+    let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+    let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+    
+    function StrengthChecker(PasswordParameter){
+        // We then change the badge's color and text based on the password strength
+
+        if(strongPassword.test(PasswordParameter)) {
+            strengthBadge.style.backgroundColor = "green"
+            strengthBadge.textContent = 'Strong'
+        } else if(mediumPassword.test(PasswordParameter)){
+            strengthBadge.style.backgroundColor = 'blue'
+            strengthBadge.textContent = 'Medium'
+        } else{
+            strengthBadge.style.backgroundColor = 'red'
+            strengthBadge.textContent = 'Weak'
+        }
+    }
+
+    // Adding an input event listener when a user types to the  password input 
+
+    password.addEventListener("input", () => {
+
+        //The badge is hidden by default, so we show it
+
+        strengthBadge.style.display= 'block'
+        clearTimeout(timeout);
+
+        //We then call the StrengChecker function as a callback then pass the typed password to it
+
+        timeout = setTimeout(() => StrengthChecker(password.value), 500);
+
+        //Incase a user clears the text, the badge is hidden again
+
+        if(password.value.length !== 0){
+            strengthBadge.style.display != 'block'
+        } else{
+            strengthBadge.style.display = 'none'
+        }
+    });
+
+</script>
+
+</body>
+</html>
