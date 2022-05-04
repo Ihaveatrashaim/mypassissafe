@@ -3,6 +3,29 @@
 <head>
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Automatic Popup</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Donate for me, it will help a lot!!!</h2>
+        <p href="">
+            This website it not free to made,i need money to host this website, pls donate some money oWo
+        </p>
+        <a href="https://www.paypal.com/paypalme/donateh461">Donate</a>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
+ 
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8244609105517593"
      crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +36,57 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+ *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f72e5;
+}
+.popup{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+ 
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -105,6 +179,17 @@ body {
 </div>
 </p>
 <script>
+ window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000
+    )
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
